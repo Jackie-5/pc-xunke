@@ -1,0 +1,15 @@
+os: Linux
+language: node
+version: 1.0
+before_script:
+  - echo 'check build env'
+install_script:
+  - echo 'install base env'
+build_script:
+  - echo 'install base env'
+after_success:
+  - echo 'install base env'
+outfile:
+  - dist
+
+# 社会皮1

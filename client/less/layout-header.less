@@ -1,0 +1,45 @@
+@headerBg: #394043;
+@headerFontsize: 12px;
+.layout-header {
+    width: 100%;
+    height: 38px;
+    line-height:38px;
+    background:@headerBg;
+    font-size: @headerFontsize;
+    &__box {
+        width: 1150px;
+        margin:0 auto;
+    }
+    &__ul {
+        &__li {
+            a {
+                color:#a9abab;
+                padding: 0 21px;
+                transition: 500ms;
+                font-weight: 300;
+                &:hover{
+                    color:#fff;
+                }
+            }
+            .active {
+                color:#fff;
+            }
+        }
+    }
+    &__login{
+        &__sign{
+            color:#fff;
+            cursor: pointer;
+            span{
+                padding:0 10px;
+                border-right: 1px solid #fff;
+                font-weight: 200;
+            }
+            &:last-child{
+                span{
+                    border-right: 0;
+                }
+            }
+        }
+    }
+}

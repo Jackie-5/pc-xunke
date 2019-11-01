@@ -1,0 +1,21 @@
+{
+  "apps": [
+    {
+      "name": "pc-xunke",
+      "script": "server/start.js",
+      "instances": 4,
+      "exec_mode": "cluster",
+      "exec_interpreter": "node",
+      "node_args": "--harmony",
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "max_memory_restart": "500M",
+      "merge_logs": true,
+      "error_file": "/data/logs/m-xunke/pm2/log/error.log",
+      "out_file": "/data/logs/m-xunke/pm2/log/out.log",
+      "watch": false,
+      "cwd": "/data/pc-xunke",
+      "max_restarts": 5,
+      "instance_var": "INSTANCE_ID_pc-xunke"
+    }
+  ]
+}

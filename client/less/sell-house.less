@@ -1,0 +1,78 @@
+.sell-house {
+  margin-top: 80px;
+  overflow: hidden;
+  &__title {
+    font-size: 23px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0 auto 30px auto;
+  }
+
+  &__item {
+    float: left;
+    position: relative;
+    margin-right: 8px;
+
+    &__mask {
+      opacity: .4;
+      filter: alpha(opacity=40);
+      position: absolute;
+      z-index: 1;
+      background-color: #000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+    &__img {
+      width: 375px;
+      height: 160px;
+      em {
+        width: 375px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.3); //这样的写法ie8-不认，建议用背景图
+        z-index: 1;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__desc1 {
+      color: #fff;
+      font-size: 20px;
+      margin-bottom: 15px;
+      position: relative;
+      bottom: 80%;
+      font-weight: 300;
+      z-index: 2;
+      text-align: center;
+    }
+    &__desc2 {
+      color: #d0d1d2;
+      margin-bottom: 15px;
+      position: relative;
+      bottom: 80%;
+      z-index: 2;
+      font-weight: 300;
+      text-align: center;
+    }
+    &__desc3 {
+      margin-bottom: 15px;
+      position: relative;
+      bottom: 80%;
+      text-align: center;
+      z-index: 2;
+      a {
+        color: #fff;
+        font-weight: 300;
+        text-decoration: none;
+      }
+    }
+  }
+}

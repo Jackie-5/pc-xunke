@@ -1,0 +1,46 @@
+[
+  {
+    "name": "首页",
+    "url": "/"
+  },
+  {
+    "name": "新房",
+    "url": "/loupan"
+  },
+  {
+    "name": "二手房",
+    "url": "/ershoufang"
+  },
+  {
+    "name": "小区",
+    "url": "/xiaoqu"
+  },
+  {
+    "name": "卖房",
+    "url": "/sellHouse"
+  },
+  {
+    "name": "地图找房",
+    "url": "/esfmap"
+  },
+  {
+    "name": "APP下载",
+    "url": "/client"
+  },
+  {
+    "name": "商家入驻",
+    "url": "/settled"
+  },
+  {
+    "name": "百科",
+    "url": "/baike"
+  },
+  {
+    "name": "资讯",
+    "url": "/zixun"
+  },
+  {
+    "name": "工具",
+    "url": "/tool"
+  }
+]

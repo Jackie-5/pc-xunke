@@ -1,0 +1,310 @@
+@hover: #fe6c17;
+.baike-content {
+  padding-top: 20px;
+  &__breadcrumb {
+    padding-bottom: 20px;
+  }
+  &__left {
+    width: 280px;
+  }
+  &__right {
+    width: 830px;
+    &__carousel {
+      position: relative;
+      height: 350px;
+      display: block;
+      .layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #000;
+        opacity: .4;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+      }
+      .title {
+        position: absolute;
+        left: 40px;
+        bottom: 35px;
+        text-align: left;
+        z-index: 2;
+        .tit {
+          color: #fff;
+          font-size: 25px;
+          padding-bottom: 15px;
+        }
+        .subtit {
+          color: #fff;
+          font-size: 14px;
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+    &__card {
+      margin-top: 20px;
+      &__a {
+        overflow: hidden;
+        display: block;
+        height: 150px;
+        position: relative;
+        .layer {
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: #000;
+          opacity: .5;
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+        }
+        .title {
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          line-height: 1;
+          color: #fff;
+          text-align: center;
+        }
+        .tit {
+          font-size: 22px;
+          display: block;
+          margin: 54px auto 15px;
+          width: 220px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .subtit {
+          font-size: 12px;
+          display: block;
+          width: 220px;
+          margin: 0 auto;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .btn-lookmore {
+      margin-top: 30px;
+      text-align: right;
+      position: relative;
+      height: 18px;
+      &::before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 7px;
+        height: 6px;
+        background-color: #394043;
+      }
+      a {
+        font-weight: bold;
+        color: inherit;
+        font-size: 14px;
+        &:hover {
+          color: @hover;
+          text-decoration: inherit;
+        }
+      }
+    }
+    &__tabs {
+      margin-top: 10px;
+      .tab-cards {
+        padding: 50px;
+        background-color: #f8f8f9;
+        position: relative;
+        margin-bottom: 20px;
+        a:hover {
+          color: @hover;
+          text-decoration: underline;
+        }
+        .btn-more {
+
+        }
+        &__icon {
+          position: absolute;
+          left: 0;
+          top: 57%;
+          width: 100%;
+          .iconfont {
+            font-size: 40px;
+            padding: 0 5px;
+            cursor: pointer;
+            color: #878787;
+          }
+          .icon-right {
+            transform:rotate(180deg);
+            -moz-transform:rotate(180deg);
+            -webkit-transform:rotate(180deg);
+            -o-transform:rotate(180deg);
+          }
+        }
+
+        .btn-more {
+          position: absolute;
+          right: 30px;
+          top: 30px;
+          font-size: 16px;
+          line-height: 1;
+          color: #666;
+        }
+        .card-hd {
+          position: relative;
+          padding-left: 90px;
+          line-height: 1;
+          .index {
+            position: absolute;
+            top: -8px;
+            left: 0;
+            width: 80px;
+            height: 60px;
+            font-size: 73px;
+          }
+          .tit {
+            font-size: 30px;
+            height: 30px;
+            font-weight: bold;
+          }
+          .subtit {
+            margin-top: 13px;
+            font-size: 15px;
+            height: 15px;
+            color: #acaeb0;
+          }
+        }
+        .card-bd {
+          padding-top: 50px;
+          &__item {
+            background: #fff;
+            padding: 20px;
+            a {
+              &:hover, &:active, &:visited, &:link {
+                text-decoration: none;
+              }
+            }
+            .tit {
+              display: block;
+              line-height: 28px;
+              height: 56px;
+              overflow: hidden;
+              font-size: 20px;
+              font-weight: bold;
+              color: #333;
+              transition: 300ms;
+              &:hover {
+                color: @hover;
+              }
+            }
+            .subtit {
+              margin-top: 5px;
+              line-height: 25px;
+              height: 75px;
+              overflow: hidden;
+              color: #7f8183;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+
+      .ant-tabs-nav .ant-tabs-tab-active {
+        color: @hover;
+        font-size: 18px;
+      }
+      .ant-tabs-ink-bar {
+        background: @hover;
+      }
+
+      .ant-tabs-nav .ant-tabs-tab {
+        font-size: 18px;
+      }
+    }
+
+    &__list {
+      .title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+      .item {
+        &__a {
+          width: 230px;
+          height: 175px;
+          position: relative;
+          overflow: hidden;
+          margin-right: 30px;
+          img {
+            width: 100%;
+          }
+        }
+        &__tit {
+          font-size: 20px;
+          line-height: 26px;
+          font-weight: 700;
+          max-height: 52px;
+          overflow: hidden;
+          display: block;
+          color: #394043;
+          text-decoration: none;
+          margin-top: -3px;
+          &:hover {
+            color: @hover
+          }
+          em {
+            font-style: normal;
+            color: red;
+          }
+        }
+        &__desc {
+          max-height: 72px;
+          margin: 11px 0;
+          font-size: 14px;
+          line-height: 24px;
+          color: #888c8e;
+          overflow: hidden;
+        }
+        &__time {
+          font-size: 12px;
+          overflow: hidden;
+          line-height: 14px;
+          margin-bottom: 19px;
+          color: #888c8e;
+        }
+        &__label {
+          padding: 5px;
+          background: #eef2f6;
+          color: #849aae;
+          &:hover {
+
+          }
+        }
+      }
+    }
+
+  }
+  .ant-carousel .slick-slide {
+    text-align: center;
+    height: 350px;
+    background: #364d79;
+    overflow: hidden;
+  }
+
+  .ant-carousel .slick-dots {
+    width: auto;
+    right: 20px;
+  }
+}
+
